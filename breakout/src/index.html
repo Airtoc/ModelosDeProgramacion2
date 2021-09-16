@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Out!</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+    <body>
+        <audio id="audio" autoplay loop>
+            <source src="/sounds/song.mp3" type="audio/ogg">
+            <source src="/sounds/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            var x = document.getElementById("audio"); 
+            audio.volume = 0.1;
+        </script>
+        <h1>Break Out!</h1>
+        <ul>
+            <li><a href="/src/game/app.html" data-text="Jugar">Jugar</a></li>
+            <li><a id="myBtnInstructions" href="#" data-text="Instrucciones">Instrucciones</a></li>
+            <li><a id="btnAbout" href="#" data-text="Acerca">Acerca</a></li>
+            <li><a onclick="playAudio()" href="#" data-text="">​​🔊​​</a></li>
+            <li><a onclick="pauseAudio()" href="#">🔇</a></li>
+        </ul>
+        <!-- The Modal -->
+        <div id="about" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Desarrollado por:</h1>
+                <p>
+                    Juan David Duarte <br> 
+                    Luis Daniel Lavado <br> 
+                    Eduwin Arley Puin
+                </p>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myInstructionsModal" class="modal">
+         <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 style="text-align:center">Instrucciones</h1>
+                <p> 
+                <h2>Objetivo:</h2>
+                Este juego consiste consiste todos los bloques en pantalla con
+                la ayuda de una barra y una pelota capaz de rebotar en varias direcciones<br>
+                <h2>Mecanicas:</h2>
+                Tiene tres vidas, cada vez que deje que la pelota toque el suelo perdera una vida<br>
+                Si pierde las tres vidas el juego finalizara<br>
+                Entre mas rápido termine el juego mejor sera su puntuación<br>
+                <h2>Controles:</h2>
+                Para evitar que la pelota toque el suelo puede desplazar de izquierda a derecha con las flechas 
+                la barra horizontal ubicada en la parte de abajo
+                </p>
+                </div>
+            </div>
+
+        <script src="/src/index.js"></script>
+    </body>
+</html>
